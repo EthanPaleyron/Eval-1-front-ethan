@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+/* NOTES, COLORS, POLICE */
+
+/* COLORS: #2D3142 #4F5D75   #FFFFFF #EF8354 #EAEBEB */
+/* POLICE: font-family: 'Righteous', cursive; && font-family: 'Lato', sans-serif; */
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* NAV BAR */
+.nav {
+  font-family: 'Righteous';
+  background-color: #4F5D75;
+  display: flex;
+  align-items: center;
+  height: 110px;
+}
+
+.section_titre {
+  margin: auto;
+  display: flex;
+}
+
+.string {
+  color: #EF8354;
+}
+
+.titre {
+  color: #FFFFFF;
+}
+
+.section_liens {
+  margin: auto;
+  display: grid;
+}
+
+.hover_button {
+  margin: 5px 0;
+  width: 90px;
+}
+
+.liens {
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.button-dark {
+  margin: auto;
+  color: #FFFFFF;
+  background-color: #2D3142;
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+/* HEADER */
+.header {
+  display: grid;
+  justify-content: center;
+}
+
+.abonnement_titre {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.tableau_abonnements {
+  margin: 0 20px;
+  display: grid;
+  grid-template: "a a a";
+  border: solid #BFC0C0 2px;
+}
+
+.tableau {
+  margin: 1.5px;
+  align-items: center;
+  border: solid #BFC0C0 2px;
+  padding: 3px 6px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.blue {
+  color: #FFFFFF;
+  background-color: #4F5D75;
+}
+
+/* LES PLATS DE LA CARTE */
+.section_plats-carte {
+  display: grid;
+  justify-content: center;
+}
+
+.plats-carte_titre {
+  text-align: center;
+  margin: 40px 0 10px;
+  font-size: 20px;
+}
+
+.card-plat {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-plat img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section_separateur {
+  display: flex;
+  justify-content: center;
+}
+
+.img_separateur {
+  border: solid 1px;
+  border-radius: 10px;
+  height: 110px;
+  width: 330px;
+  margin: 20px 0;
+}
+
+/* BLOG */
+
+.section_blog {
+  display: grid;
+  justify-content: center;
+}
+
+.article_blog {
+  margin: 15px 45px;
+  box-shadow: 0px 5px 35px 10px #BFC0C0;
+}
+
+.image_article {
+  height: 100px;
+  width: 290px;
+}
+
+.super-titre {
+  font-size: 20px;
+  text-align: center;
+  margin: 15px;
+}
+
+.description {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+
+/* HOVERS */
+
+.hover_button:hover {
+  background-color: #EF8354;
+  border-radius: 5px;
+}
