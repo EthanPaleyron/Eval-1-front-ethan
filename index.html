@@ -17,12 +17,12 @@
     </section>
 
     <section class="section_liens">
-      <div class="hover_button"><a class="liens" href="#">PLATS</a></div>
-      <div class="hover_button"><a class="liens" href="#">BLOG</a></div>
-      <div class="hover_button"><a class="liens" href="#">CONTACT</a></div>
+      <div class="section_button_hover hover_button"><a class="liens" href="#">PLATS</a></div>
+      <div class="section_button_hover hover_button"><a class="liens" href="#">BLOG</a></div>
+      <div class="section_button_hover hover_button"><a class="liens" href="#">CONTACT</a></div>
     </section>
 
-    <button class="button-dark">DARK</button>
+    <button class="button-dark hover_button">DARK</button>
   </nav>
 
   <!-- HEADER -->
@@ -51,7 +51,7 @@
   <section class="section_separateur">
     <img class="img_separateur" src="img/img-12.jpg" alt="img">
   </section>
-  
+
   <!-- BLOG -->
   <section class="section_blog">
     <article class="article_blog">
@@ -88,6 +88,52 @@
   </section>
 
   <!-- FOOTER -->
+  <footer class="footer">
+    <h2 class="titre_footer">FORMULAIRE DE CONTACT</h2>
+    <p class="consultation">Pour plus de details vous pouvez consulter noter site <a class="eden-school"
+        href="https://www.edenschool.fr/">ici</a></p>
+
+    <h3 class="titre_footer">INFORMATIONS DE CONTACT</h3>
+    <fieldset class="champs_age">
+      <legend class="txt_blanc">Quel est votre age</legend>
+      <input type="radio" name="drone" id="12-14"><label class="txt_blanc" for="12-14">12-14</label>
+      <input type="radio" name="drone" id="15-17"><label class="txt_blanc" for="15-17">15-17</label>
+      <input type="radio" name="drone" id="18-19"><label class="txt_blanc" for="18-19">18-19</label>
+    </fieldset>
+
+    <label class="nom_email txt_blanc" for="nom">nom :<input class="input" type="name" id="nom"
+        placeholder="Saisissez votre nom"></label>
+
+    <label class="nom_email txt_blanc" for="email">mail :<input class="input" type="email" id="email"
+        placeholder="Saisissez votre mail"></label>
+
+    <h3 class="titre_footer">VOTRE JEU PREFERE</h3>
+    <label class="txt_blanc nom_email" for="console">Choisissez une console :
+      <select class="input" name="" id="console">
+        <option>--Choisissez une console--</option>
+        <option>switch</option>
+      </select>
+    </label>
+
+    <label class="txt_blanc nom_email" for="jeu">Choisissez un jeu :
+      <select class="input" name="" id="jeu">
+        <option>--Choisissez un jeu--</option>
+        <option>Mincraft</option>
+      </select>
+    </label>
+
+    <h3 class="titre_footer">VOTRE MESSAGE</h3>
+    <section class="contenue_centrer">
+      <input class="input_message" type="text" placeholder="Saisissez votre message">
+    </section>
+
+    <label class="nom_email txt_blanc" for="">cryptage du message :<input class="input" type="text"
+        placeholder="saisisser votre code"></label>
+
+    <section class="contenue_centrer">
+      <input type="button" value="Envoyer votre message" class="envoyer hover_button">
+    </section>
+  </footer>
 
   <script type="module" src="/main.js"></script>
 </body>

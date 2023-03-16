@@ -48,12 +48,14 @@ body {
 
 .section_liens {
   margin: auto;
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
-.hover_button {
+.section_button_hover {
   margin: 5px 0;
   width: 90px;
+  border-radius: 5px;
 }
 
 .liens {
@@ -140,12 +142,11 @@ body {
   border: solid 1px;
   border-radius: 10px;
   height: 110px;
-  width: 330px;
+  width: 80%;
   margin: 20px 0;
 }
 
 /* BLOG */
-
 .section_blog {
   display: grid;
   justify-content: center;
@@ -174,10 +175,87 @@ body {
 }
 
 /* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 0;
+  background-color: #4F5D75;
+  padding: 15px;
+}
+
+.titre_footer {
+  margin: 20px 0;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.consultation {
+  font-size: 13px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.eden-school {
+  font-size: 13px;
+  color: #EF8354;
+  text-decoration: underline;
+}
+
+.champs_age {
+  margin: 0 75px;
+  border: solid #BFC0C0 0.8px;
+  padding: 5px;
+}
+
+.txt_blanc {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 13px;
+  margin-top: 25px;
+}
+
+.input {
+  text-align: center;
+  margin: 15px 0 15px 5px;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+}
+
+.contenue_centrer {
+  display: flex;
+  justify-content: center;
+}
+
+.input_message {
+  height: 200px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+.envoyer {
+  color: #FFFFFF;
+  background-color: #2D3142;
+  border: solid #FFFFFF 1px;
+  border-radius: 7px;
+  padding: 7px;
+}
 
 /* HOVERS */
-
 .hover_button:hover {
   background-color: #EF8354;
-  border-radius: 5px;
+}
+
+@media screen and (min-width: 680px) {
+  .section_liens {
+    flex-direction: row;
+  }
+
+  .string {
+    font-size: 50px;
+  }
+
+  .button-dark {
+    padding: 15px;
+  }
 }
